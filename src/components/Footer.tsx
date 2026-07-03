@@ -1,12 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="site-footer" id="contact-footer">
+    <footer className="site-footer">
       <div className="wrap foot-grid">
         <div>
-          <div className="logo">
-            Asha<span style={{ color: "var(--amber)" }}>Performance</span>
+          <div className="foot-brand">
+            <span className="chip">
+              <Image
+                src="/images/logo-mark.jpeg"
+                alt="Asha Performance"
+                width={40}
+                height={40}
+              />
+            </span>
+            <span className="wm">
+              Asha<span> Performance</span>
+            </span>
           </div>
           <p>
             An affiliate performance network running Cost-Per-Sale campaigns
@@ -15,16 +26,19 @@ export default function Footer() {
           </p>
         </div>
         <div>
-          <div className="foot-eyebrow">Agency</div>
+          <div className="foot-eyebrow">Explore</div>
           <ul>
             <li>
-              <Link href="/#services">Services</Link>
+              <Link href="#services">Verticals</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="#process">Process</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="#results">Results</Link>
+            </li>
+            <li>
+              <Link href="#faq">FAQ</Link>
             </li>
           </ul>
         </div>
