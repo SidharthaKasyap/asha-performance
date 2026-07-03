@@ -341,7 +341,7 @@ export default function Home() {
               <div>
                 <div className="k">Email</div>
                 <div className="v">
-                  <a href="mailto:hello@ashaperformance.com">hello@ashaperformance.com</a>
+                  <a href="mailto:business@ashaperformance.com">business@ashaperformance.com</a>
                 </div>
               </div>
             </div>
@@ -354,7 +354,7 @@ export default function Home() {
               <div>
                 <div className="k">Phone</div>
                 <div className="v">
-                  <a href="tel:+14155550173">+1 (415) 555-0173</a>
+                  <a href="tel:+917903682538">+91 79036 82538</a>
                 </div>
               </div>
             </div>
@@ -367,7 +367,7 @@ export default function Home() {
               </span>
               <div>
                 <div className="k">Office</div>
-                <div className="v">San Francisco, CA</div>
+                <div className="v">Noida, U.P., India</div>
               </div>
             </div>
           </div>

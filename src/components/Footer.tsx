@@ -46,14 +46,14 @@ export default function Footer() {
           <div className="foot-eyebrow">Contact</div>
           <ul>
             <li>
-              <a href="mailto:hello@ashaperformance.com">
-                hello@ashaperformance.com
+              <a href="mailto:business@ashaperformance.com">
+                business@ashaperformance.com
               </a>
             </li>
             <li>
-              <a href="tel:+14155550173">+1 (415) 555-0173</a>
+              <a href="tel:+917903682538">+91 79036 82538</a>
             </li>
-            <li>San Francisco, CA</li>
+            <li>Noida, U.P., India</li>
           </ul>
         </div>
       </div>
