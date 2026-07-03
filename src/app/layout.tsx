@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Asha Performance — Affiliate Performance Network",
+  title: "Asha Performance — Quality Traffic & CPS Campaigns",
   description:
-    "Asha Performance runs Cost-Per-Sale affiliate campaigns across E-Commerce, Travel, BFSI, and Education. You only pay when a sale closes.",
+    "Asha Performance drives high-intent, fraud-screened traffic for Cost-Per-Sale web campaigns — and builds and runs its own campaigns across E-Commerce, Travel, BFSI, and Education.",
 };
 
 export default function RootLayout({

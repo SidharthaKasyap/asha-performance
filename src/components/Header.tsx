@@ -18,10 +18,10 @@ export default function Header() {
           </span>
         </Link>
         <nav className="navlinks">
+          <Link href="#what-we-do">What we do</Link>
           <Link href="#services">Verticals</Link>
           <Link href="#process">Process</Link>
           <Link href="#results">Results</Link>
-          <Link href="#faq">FAQ</Link>
           <Link href="#contact">Contact</Link>
         </nav>
         <Link href="#contact" className="btn btn-primary nav-cta">

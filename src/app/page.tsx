@@ -56,31 +56,33 @@ const steps = [
 
 const features = [
   {
-    title: "Pay only on confirmed sales",
-    body: "No spend on clicks or impressions. Payouts fire when a sale clears your confirmation window.",
+    title: "Quality traffic, not raw clicks",
+    body: "High-intent, fraud-screened web traffic that actually converts on Cost-Per-Sale offers — matched to your vertical.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <path d="M20 6 9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-3.5-3.5" strokeLinecap="round" />
+        <path d="M11 8v6M8 11h6" strokeLinecap="round" />
       </svg>
     ),
   },
   {
-    title: "Fraud-screened traffic",
-    body: "Dedupe, bot filtering, and pattern checks strip out invalid conversions before you're billed.",
+    title: "Fraud screening built in",
+    body: "Dedupe, bot filtering, and pattern checks strip out invalid conversions before a single payout is counted.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
         <path d="M12 3 5 6v5c0 5 3.5 8 7 10 3.5-2 7-5 7-10V6l-7-3z" strokeLinejoin="round" />
+        <path d="m9 12 2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
-    title: "Vetted publisher network",
-    body: "2,300+ active publishers, matched to your vertical and continuously ranked on real conversion quality.",
+    title: "Campaigns run end-to-end",
+    body: "Want it hands-off? We build, launch, and optimize the whole CPS campaign in-house — creative, tracking, and scale.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-        <circle cx="9" cy="8" r="3" />
-        <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" strokeLinecap="round" />
-        <path d="M16 6a3 3 0 0 1 0 5M18 20c0-2.5-1.2-4.5-3-5.5" strokeLinecap="round" />
+        <path d="M4 20V10M10 20V4M16 20v-7M20 20H2" strokeLinecap="round" />
+        <path d="m14 8 3-3 3 3" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -93,11 +95,11 @@ const testimonials = [
 ];
 
 const faqs = [
-  { q: "What does Cost-Per-Sale actually mean?", a: "You're billed only when a sale is confirmed and passes your validation window — not on clicks, impressions, or unqualified leads. Your cost is directly tied to revenue." },
-  { q: "How fast can a campaign go live?", a: "Most offers are live across our vetted network within a few business days of agreeing confirmation rules and payouts per vertical." },
-  { q: "How do you prevent fraud and bad conversions?", a: "Every click-to-sale is deduped, bot-filtered, and pattern-checked. Invalid or duplicated conversions are stripped out before any payout is calculated." },
-  { q: "Which verticals do you support?", a: "E-Commerce, Travel, BFSI, and Education today — each with compliant CPS/CPL structures built for that vertical's approval funnel." },
-  { q: "Is there a minimum spend or lock-in?", a: "No fixed retainers. Because you pay per confirmed sale, spend scales with the results the network delivers." },
+  { q: "Do you provide traffic, or run the campaign for me?", a: "Both. We can send high-intent, fraud-screened traffic to your existing Cost-Per-Sale offers, or build and operate the entire campaign in-house — creative, funnels, tracking, and optimization. Many partners use us for both." },
+  { q: "What does Cost-Per-Sale actually mean?", a: "You're measured only on sales that are confirmed and pass validation — not on clicks, impressions, or unqualified leads. Cost stays directly tied to revenue." },
+  { q: "How do you make sure the traffic is quality?", a: "Every click-to-sale is deduped, bot-filtered, and pattern-checked. Invalid or duplicated conversions are stripped out before anything is counted or billed." },
+  { q: "How fast can we go live?", a: "Most offers are live within a few business days of agreeing confirmation rules and targets — whether we're supplying traffic or running the full campaign." },
+  { q: "Which verticals do you support?", a: "E-Commerce, Travel, BFSI, and Education today — each with CPS structures built for that vertical's approval funnel." },
 ];
 
 export default function Home() {
@@ -108,15 +110,16 @@ export default function Home() {
         <div className="wrap hero-grid">
           <div className="hero-copy">
             <span className="pill animate-in d1">
-              <span className="dot" /> Affiliate Performance Network
+              <span className="dot" /> Performance Marketing · CPS
             </span>
             <h1 className="display hero-h animate-in d2">
-              You only pay when a <span className="grad-text">sale closes</span>.
+              Quality traffic that <span className="grad-text">converts</span>.
+              Campaigns that perform.
             </h1>
             <p className="hero-sub animate-in d3">
-              Asha Performance runs Cost-Per-Sale affiliate campaigns across
-              E-Commerce, Travel, BFSI, and Education — a vetted publisher
-              network that gets paid the same way you do: on results.
+              Asha Performance drives high-intent, fraud-screened traffic for
+              Cost-Per-Sale web campaigns — and builds and runs its own
+              campaigns across E-Commerce, Travel, BFSI, and Education.
             </p>
             <div className="hero-cta animate-in d4">
               <Link href="#contact" className="btn btn-primary">
@@ -161,15 +164,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------------- What we do ---------------- */}
+      <section className="section" id="what-we-do">
+        <div className="wrap">
+          <div className="section-head center reveal">
+            <span className="eyebrow">What we do</span>
+            <h2 className="display h2">Two ways we drive performance.</h2>
+            <p>
+              We supply the traffic that converts on Cost-Per-Sale offers — and
+              when you&apos;d rather hand it all over, we build and run the
+              campaigns ourselves.
+            </p>
+          </div>
+          <div className="offer-grid">
+            <div className="offer-card reveal">
+              <div className="oc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <span className="tag">01 — Traffic</span>
+              <h3>Quality traffic for CPS campaigns</h3>
+              <p>
+                We deliver high-intent, fraud-screened web traffic that converts
+                on your Cost-Per-Sale offers. You get real buyers — not raw
+                clicks — with every conversion validated before it counts.
+              </p>
+              <ul className="offer-list">
+                <li>High-intent web traffic, matched to your vertical</li>
+                <li>Bot filtering, dedupe &amp; fraud screening built in</li>
+                <li>Only validated, confirmed conversions are billed</li>
+              </ul>
+            </div>
+
+            <div className="offer-card dark reveal">
+              <div className="oc-ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M4 20V10M10 20V4M16 20v-7M20 20H2" strokeLinecap="round" />
+                  <path d="m14 8 3-3 3 3" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <span className="tag">02 — Campaigns</span>
+              <h3>Campaigns, built &amp; run in-house</h3>
+              <p>
+                Prefer the results without the operating load? We design and
+                operate our own CPS campaigns end-to-end — offer setup, creative,
+                tracking, and optimization across every vertical we run.
+              </p>
+              <ul className="offer-list">
+                <li>End-to-end campaign management</li>
+                <li>Creative, landing &amp; funnel setup</li>
+                <li>Optimized vertical by vertical, click to sale</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------------- Services ---------------- */}
-      <section className="section" id="services">
+      <section className="section tint" id="services">
         <div className="wrap">
           <div className="section-head center reveal">
             <span className="eyebrow">Verticals</span>
-            <h2 className="display h2">Four verticals. One performance model.</h2>
+            <h2 className="display h2">Four verticals we drive performance across.</h2>
             <p>
-              Whatever the funnel, the deal is the same — payouts fire on
-              confirmed conversions, screened for quality before you&apos;re billed.
+              Whether we&apos;re sending you traffic or running the campaign
+              ourselves, the model is the same — performance is measured on
+              confirmed sales, screened for quality first.
             </p>
           </div>
           <div className="svc-grid">
@@ -185,7 +247,7 @@ export default function Home() {
       </section>
 
       {/* ---------------- Process ---------------- */}
-      <section className="section tint" id="process">
+      <section className="section" id="process">
         <div className="wrap">
           <div className="section-head reveal">
             <span className="eyebrow">Process</span>
@@ -205,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* ---------------- Why us (split) ---------------- */}
-      <section className="section" id="results">
+      <section className="section tint" id="results">
         <div className="wrap split">
           <div className="reveal">
             <span className="eyebrow">Why Asha</span>

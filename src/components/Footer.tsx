@@ -20,22 +20,22 @@ export default function Footer() {
             </span>
           </div>
           <p>
-            An affiliate performance network running Cost-Per-Sale campaigns
-            across E-Commerce, Travel, BFSI, and Education — you pay only when a
-            sale converts.
+            Quality traffic for Cost-Per-Sale web campaigns — plus campaigns
+            built and run in-house across E-Commerce, Travel, BFSI, and
+            Education. Performance measured on confirmed sales.
           </p>
         </div>
         <div>
           <div className="foot-eyebrow">Explore</div>
           <ul>
             <li>
+              <Link href="#what-we-do">What we do</Link>
+            </li>
+            <li>
               <Link href="#services">Verticals</Link>
             </li>
             <li>
               <Link href="#process">Process</Link>
-            </li>
-            <li>
-              <Link href="#results">Results</Link>
             </li>
             <li>
               <Link href="#faq">FAQ</Link>

@@ -558,6 +558,119 @@ h2.h2 {
   line-height: 1.65;
 }
 
+/* ---------------- Offerings (what we do) ---------------- */
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 860px) {
+  .offer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.offer-card {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 40px 36px;
+  background: var(--paper);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.offer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 54px -30px rgba(19, 40, 77, 0.45);
+}
+.offer-card.dark {
+  background: linear-gradient(155deg, var(--navy), var(--navy-900));
+  border-color: transparent;
+  color: #fff;
+}
+.offer-card.dark::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(242, 101, 34, 0.35), transparent 70%);
+  top: -90px;
+  right: -70px;
+}
+.offer-card .tag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--orange);
+}
+.offer-card.dark .tag {
+  color: var(--orange-300);
+}
+.offer-card .oc-ico {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(242, 101, 34, 0.1);
+  color: var(--orange);
+  margin-bottom: 22px;
+}
+.offer-card.dark .oc-ico {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--orange-300);
+}
+.offer-card .oc-ico svg {
+  width: 28px;
+  height: 28px;
+}
+.offer-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-size: 25px;
+  margin: 14px 0 12px;
+  color: var(--navy);
+}
+.offer-card.dark h3 {
+  color: #fff;
+}
+.offer-card > p {
+  color: var(--slate);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.offer-card.dark > p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.offer-list {
+  list-style: none;
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+.offer-list li {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--navy);
+}
+.offer-list li::before {
+  content: "✓";
+  color: var(--orange);
+  font-weight: 800;
+  line-height: 1.4;
+}
+.offer-card.dark .offer-list li {
+  color: rgba(255, 255, 255, 0.85);
+}
+.offer-card.dark .offer-list li::before {
+  color: var(--orange-300);
+}
+
 /* ---------------- Process ---------------- */
 .proc-grid {
   display: grid;
